@@ -9,3 +9,13 @@ class Pole(models.Model):
 
     def __str__(self):
         return str(self.pole)
+
+
+class status(models.Model):
+    ta = models.ForeignKey(TA)
+    wydany = models.BooleanField(default=False)
+    ilosc = models.IntegerField(default=1)
+
+    def __str__(self):
+        return str(self.pole)
+

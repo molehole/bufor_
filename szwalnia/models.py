@@ -1,4 +1,5 @@
 from django.db import models
+from bufor import models
 
 # Create your models here.
 class Wozek(models.Model):
@@ -10,3 +11,8 @@ class Wozek(models.Model):
 
     def __str__(self):
         return str(self.wozek)
+
+class Status(models.Model):
+    ta = models.ForeignKey(TA)   
+    wydany = models.BooleanField(default=False)
+    ilosc = models.IntegerField(default=1)

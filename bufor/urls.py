@@ -21,7 +21,7 @@ from stolarnia import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^szwalnia/', include('szwalnia.urls')),
-    url(r'^agregator/', include('agregator.urls')),
-    url(r'^stolarnia/', include('stolarnia.urls')),
+#    url(r'^szwalnia/', include('szwalnia.urls')),
+#    url(r'^agregator/', include('agregator.urls')),
+#    url(r'^stolarnia/', include('stolarnia.urls')),
 ]

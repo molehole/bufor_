@@ -29,19 +29,6 @@ class Etykieta(models.Model):
     def __str__(self):
         return str(self.nr)
 
-#Tabela Statusów
-class Status(models.Model):
-    ta = models.ForeignKey(TA)
-    szwalnia = models.BooleanField(default=False)
-    stolarnia = models.BooleanField(default=False)
-    tapicernia = models.BooleanField(default=False)
-    szwalnia_ilosc = models.IntegerField(default=1)
-    stolarnia_ilosc = models.IntegerField(default=1)
-    tapicernia_ilosc = models.IntegerField(default=1)    
-
-    def __str__(self):
-        return str(self.ta.nr)
-
 class Kolejnosc(models.Model):
     tura = models.TextField()
     data = models.DateField()
